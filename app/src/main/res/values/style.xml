@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MathIo.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/pink_light</item>
+        <item name="hintTextColor">@color/pink_light</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="errorIconDrawable">@drawable/ic_error</item>
+        <item name="android:layout_marginTop">@dimen/margin_side_medium</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.MaterialComponents.Subtitle2</item>
+    </style>
+</resources>

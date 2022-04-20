@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.rchyn.mathio.ui.fragment.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_rectangleFragment"
+            app:destination="@id/rectangleFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_squareFragment"
+            app:destination="@id/squareFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_triangleFragment"
+            app:destination="@id/triangleFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_circleFragment"
+            app:destination="@id/circleFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_parallelogramFragment"
+            app:destination="@id/parallelogramFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_rhombusFragment"
+            app:destination="@id/rhombusFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rectangleFragment"
+        android:name="com.rchyn.mathio.ui.fragment.subjectcalc.RectangleFragment"
+        android:label="@string/rectangle_title"
+        tools:layout="@layout/fragment_rectangle" />
+    <fragment
+        android:id="@+id/squareFragment"
+        android:name="com.rchyn.mathio.ui.fragment.subjectcalc.SquareFragment"
+        android:label="@string/square_title"
+        tools:layout="@layout/fragment_square" />
+    <fragment
+        android:id="@+id/triangleFragment"
+        android:name="com.rchyn.mathio.ui.fragment.subjectcalc.TriangleFragment"
+        android:label="@string/triangle_title"
+        tools:layout="@layout/fragment_triangle" />
+    <fragment
+        android:id="@+id/circleFragment"
+        android:name="com.rchyn.mathio.ui.fragment.subjectcalc.CircleFragment"
+        android:label="@string/circle_title"
+        tools:layout="@layout/fragment_circle" />
+    <fragment
+        android:id="@+id/parallelogramFragment"
+        android:name="com.rchyn.mathio.ui.fragment.subjectcalc.ParallelogramFragment"
+        android:label="@string/parallelogram_title"
+        tools:layout="@layout/fragment_parallelogram" />
+    <fragment
+        android:id="@+id/rhombusFragment"
+        android:name="com.rchyn.mathio.ui.fragment.subjectcalc.RhombusFragment"
+        android:label="@string/rhombus_title"
+        tools:layout="@layout/fragment_rhombus" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.rchyn.mathio.ui.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

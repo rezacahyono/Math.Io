@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MathIo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="rectangle_title">Area of Rectangle</string>
+    <string name="square_title">Area of Square</string>
+    <string name="triangle_title">Area of Triangle</string>
+    <string name="circle_title">Area of Circle</string>
+    <string name="parallelogram_title">Area of Parallelogram</string>
+    <string name="rhombus_title">Area of Rhombus</string>
+    <string name="my_calculator">My Calculator</string>
+    <string name="great_user">Hello!\nMuhamad Reza</string>
+    <string name="new_app_ncalculator">New app \ncalculator🤩</string>
+    <string name="can_help_yout_life">Can help yout life</string>
+    <string name="subject_calc">Subject calc</string>
+    <string name="visit">Visit</string>
+    <string name="length">Input length</string>
+    <string name="width">Input width</string>
+    <string name="calculator">Calculated</string>
+    <string name="side">Input side</string>
+    <string name="base">Input base</string>
+    <string name="height">Input height</string>
+    <string name="radius">Input radius</string>
+    <string name="diagonal_one">Input diagonal 1</string>
+    <string name="diagonal_two">Input diagonal 2</string>
+    <string name="result">Result\n%.2f</string>
+    <string name="erro_message">Field can not be empty</string>
+    <string name="title_calculator">Calculator</string>
+    <string name="message_alert">Do you want to calculate the %s</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="title_app">Math.Io</string>
+</resources>

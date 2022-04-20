@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_bg"
+        android:padding="@dimen/margin_side_medium">
+
+        <TextView
+            android:id="@+id/tv_great"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_black"
+            android:text="@string/my_calculator"
+            android:textColor="@color/black_text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/btn_search" />
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:background="@drawable/btn_circle_image_bg"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_round_search"
+            app:layout_constraintBottom_toBottomOf="@id/btn_notification"
+            app:layout_constraintEnd_toStartOf="@+id/btn_notification"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/tv_great"
+            app:layout_constraintTop_toTopOf="@id/btn_notification"
+            app:tint="@color/red" />
+
+        <ImageButton
+            android:id="@+id/btn_notification"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/btn_circle_image_bg"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_notifications"
+            app:layout_constraintBottom_toBottomOf="@+id/avatar_user"
+            app:layout_constraintEnd_toStartOf="@+id/avatar_user"
+            app:layout_constraintStart_toEndOf="@+id/btn_search"
+            app:layout_constraintTop_toTopOf="@+id/avatar_user"
+            app:tint="@color/red" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar_user"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_notification"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_great_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_side_medium"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/great_user"
+            android:textColor="@color/black_text"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_great" />
+
+
+        <FrameLayout
+            android:id="@+id/frame_card"
+            android:layout_width="0dp"
+            android:layout_height="162dp"
+            android:layout_marginTop="@dimen/margin_side_large"
+            android:background="@drawable/card_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_great_user" />
+
+        <TextView
+            android:id="@+id/tv_new_calc_app"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_side_medium"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/new_app_ncalculator"
+            android:textColor="@color/white_bg"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/image_calc"
+            app:layout_constraintStart_toStartOf="@id/frame_card"
+            app:layout_constraintTop_toTopOf="@id/frame_card" />
+
+        <TextView
+            android:id="@+id/tv_can_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_side_medium"
+            android:fontFamily="@font/nunito_medium"
+            android:text="@string/can_help_yout_life"
+            android:textColor="@color/white_bg"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/frame_card"
+            app:layout_constraintStart_toStartOf="@id/frame_card" />
+
+        <ImageView
+            android:id="@+id/image_calc"
+            android:layout_width="164dp"
+            android:layout_height="216dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_calc"
+            app:layout_constraintBottom_toBottomOf="@id/frame_card"
+            app:layout_constraintEnd_toEndOf="@id/frame_card" />
+
+
+        <TextView
+            android:id="@+id/tv_subject_calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_side_large"
+            android:fontFamily="@font/nunito_bold"
+            android:text="@string/subject_calc"
+            android:textColor="@color/black_text"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/frame_card" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_subject"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_subject_calc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
