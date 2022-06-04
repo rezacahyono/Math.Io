@@ -42,12 +42,7 @@ class HomeFragment : Fragment() {
         val dataset = Datasource.getDatasetSubject()
         adapter = ItemSubjectAdapter(dataset)
         binding.apply {
-            val gridLayoutManager = object : GridLayoutManager(requireContext(), 2) {
-                override fun canScrollHorizontally(): Boolean {
-                    return false
-                }
-            }
-            recyclerSubject.layoutManager = gridLayoutManager
+            recyclerSubject.layoutManager = GridLayoutManager(requireContext(),2)
             recyclerSubject.adapter = adapter
         }
         adapter.setOnItemCallbackAdapter(object : ItemSubjectAdapter.OnItemCallbackListener {
